@@ -16,7 +16,7 @@ output:
     toc_float:
       collapsed: false
 ---
-
+The following script uses a client's digital marketing campaign, budget and student enrollment data to forecast student enrollments for the coming year.
 ```{r message =  FALSE}
 # Libraries
 library(caret)
@@ -216,16 +216,18 @@ R2(predictEnsemble, yTest)
 # Final Model Prediction: Forecasted Enrollments
 
 Based on the following December 2019 spending figures:
-- **LVN**: $1,271.86
-- **Med Asst**: $2,568.00
-- **Pharmacy**: $1,015.64
-- **Nurse Aide**: $939.75
-- **Med Asst**: $1,688.54
+
+* **LVN**: $1,271.86
+* **Med Asst**: $2,568.00
+* **Pharmacy**: $1,015.64
+* **Nurse Aide**: $939.75
+* **Med Asst**: $1,688.54
 
 Assuming additional spending by RGV College:
-- Dec + 10%
-- Dec + 15%
-- Dec + 20%
+
+* Dec + 10%
+* Dec + 15%
+* Dec + 20%
     
 ```{r}
 # Import and clean data
