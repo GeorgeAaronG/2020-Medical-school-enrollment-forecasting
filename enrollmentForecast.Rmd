@@ -1,5 +1,12 @@
 ---
 title: "Medical College Data Modeling: Enrollments"
+
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+  encoding=encoding,
+  output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+
 output: 
   html_notebook:
     code_folding: hide
@@ -18,7 +25,7 @@ library(corrplot)
 ```
 
 # Imported Data
-```{r echo = FALSE}
+```{r}
 # Import and clean data
 data <- read.csv("C:/Users/george/Documents/Digital Marketing Data/Triggers/spendingAndEnrollments.csv")
 dataRGV <- data
